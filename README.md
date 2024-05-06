@@ -1,4 +1,4 @@
-## Script Powershell permettant d'activer le Secure Boot sur les postes LENOVO
+## Script PowerShell d'activation du Secure Boot sur les ordinateurs Lenovo
 
 - Le script est éxecutable en PMAD, ou directement sur le poste de l'utilisateur. 
 - Aucune action dans le BIOS est nécessaire, tout est fait automatiquement sur la session utilisateur. 
