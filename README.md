@@ -1,4 +1,6 @@
-** CE SCRIPT FONCTIONNE UNIQUEMENT SUR LES POSTES LENOVO **
+# Script Powershell permettant d'activer le Secure Boot sans accéder au BIOS sur les postes LENOVO.
+
+**CE SCRIPT FONCTIONNE UNIQUEMENT SUR LES POSTES LENOVO**
 
 Le script est éxecutable en PMAD, ou directement sur le poste de l'utilisateur. 
 Aucune action dans le BIOS est nécessaire, tout est fait automatiquement sur la session utilisateur. 
