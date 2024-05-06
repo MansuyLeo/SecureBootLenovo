@@ -1,4 +1,4 @@
-# Script Powershell permettant d'activer le Secure Boot sur les postes LENOVO
+## Script Powershell permettant d'activer le Secure Boot sur les postes LENOVO
 
 **CE SCRIPT FONCTIONNE UNIQUEMENT SUR LES POSTES LENOVO**
 
