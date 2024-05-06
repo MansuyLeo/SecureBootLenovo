@@ -1,9 +1,9 @@
 <#
 
-Auteur: MANSUY Léo - Stagiaire TAM - SNCF / e.SNCF
+Auteur: MANSUY Léo
 Date: 03/05/2024
 Version : 1.0
-Description : Script d'activation du Secure Boot sur les ordinateurs Lenovo effectué lors de mon stage à la SNCF / e.SNCF
+Description : Script d'activation du Secure Boot sur les ordinateurs Lenovo
 
 Changelog v1.0 :
 
