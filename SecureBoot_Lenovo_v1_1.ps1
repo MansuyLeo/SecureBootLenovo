@@ -8,7 +8,7 @@ Description : Script PowerShell d'activation du Secure Boot sur les ordinateurs 
 Changelog v1.1 :
 
 - Détection du platform mode (paragraphe 6.)
-- Ajout d'un fichier .bat annexe pour execution du script moins contraignante
+- Ajout d'un fichier .bat pour execution automatique du script .ps1
 
 #>
 
@@ -110,10 +110,10 @@ if ($result -eq "Yes") {
         Write-Host "Le Secure Boot est en Setup Mode, faire le necessaire dans le BIOS pour qu'il soit en User Mode, arret du script"
         Add-Log "Platform mode = SETUP MODE: NOK, arrêt du script"
         exit 1
-    }else{
-        Write-Host "Le Secure Boot est en User Mode
+    }else{ 
+        Write-Host "Le Secure Boot est en User Mode"
         Add-Log "Platform mode = USER MODE: OK"
-		
+	}
  
     # Liste des modèles et des commandes correspondantes pour activer le Secure Boot
     $modelCommands = @{
