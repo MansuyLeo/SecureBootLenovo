@@ -1,16 +1,14 @@
 <#
 
 Auteur: MANSUY Léo
-Date: 03/05/2024
-Version : 1.0
+Date: 02/10/2024
+Version : 1.1
 Description : Script PowerShell d'activation du Secure Boot sur les ordinateurs Lenovo
 
-Changelog v1.0 :
+Changelog v1.1 :
 
-- Nouveaux modèles ThinkPad théoriques ajoutés
-- Ajout vérification mot de passe BIOS 
-- En commentaire sur la partie 6. : Détection du Platerform mode
-- Ajout d'un pop-up lors de l'execution du script
+- Détection du platform mode (paragraphe 6.)
+- Ajout d'un fichier .bat annexe pour execution du script moins contraignante
 
 #>
 
@@ -103,9 +101,8 @@ if ($result -eq "Yes") {
         Add-Log "BitLocker suspendu ou pas actif: OK"
     }
 
-    <# 
 	
-	6. Vérification du Plateform mode Secure Boot (problèmes de faux positifs) NON INCLUS DANS LE SCRIPT POUR LE MOMENT
+    # 6. Vérification du Plateform mode Secure Boot
     $PlatformMode = (Get-SecureBootUEFI -Name SetupMode).Bytes
     # si le $PlatformMode = 1 le Secure Boot est en Setup Mode. si le PlatformMode = 0 le Secure Boot est en User Mode
 
@@ -117,7 +114,6 @@ if ($result -eq "Yes") {
         Write-Host "Le Secure Boot est en User Mode
         Add-Log "Platform mode = USER MODE: OK"
 		
-    #>
  
     # Liste des modèles et des commandes correspondantes pour activer le Secure Boot
     $modelCommands = @{
